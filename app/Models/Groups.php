@@ -12,7 +12,7 @@ class Groups extends Model
         'name'
     ];
     public function students(){
-        return $this->hasMany(Students::class, 'groups_id');
+        return $this->hasMany(Students::class, 'group_id');
     }
     public function subjets()
     {

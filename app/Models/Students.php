@@ -16,4 +16,7 @@ class Students extends Model
     public function group(){
         return $this->belongsTo(Groups::class,'groups_id');
     }
+    public function mark(){
+        return $this->hasMany(Marks::class, 'student_id');
+    }
 }

@@ -17,7 +17,7 @@ class Subject_Teacher_TableSeeder extends Seeder
         for ($i = 0; $i < 50; $i++) {
             DB::table('subject_teacher')->insert([
                 'subject_id' =>57,
-                'teacher_id' =>7,
+                'teacher_id' =>9,
                 'group_id' =>4,
             ]);
 

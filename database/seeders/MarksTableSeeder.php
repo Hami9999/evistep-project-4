@@ -16,10 +16,10 @@ class MarksTableSeeder extends Seeder
         $faker = \Faker\Factory::create();
         for ($i = 0; $i < 50; $i++) {
             Marks::create([
-                'student_id' => 7,
-                'subject_id' =>57,
+                'student_id' => 17,
+                'subject_id' =>60,
                 'date' => $faker->date,
-                'mark' => 10,
+                'mark' => 14,
             ]);
         }
     }

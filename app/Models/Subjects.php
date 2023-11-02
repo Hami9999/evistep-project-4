@@ -19,4 +19,7 @@ class Subjects extends Model
     {
         return $this->belongsToMany(Groups::class,'subject_teacher','subjects_id','groups_id');
     }
+    public function subjectMark(){
+        return $this->hasMany(Marks::class, 'subject_id');
+    }
 }
