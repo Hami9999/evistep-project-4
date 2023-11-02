@@ -31,3 +31,4 @@ Route::post('groups',[GroupController::class, 'index']);
 Route::get('groups/{group}',[GroupController::class, 'show']);
 Route::post('subjects',[SubjectController::class, 'index']);
 Route::get('subjects/{subject}',[SubjectController::class, 'show']);
+Route::post('subjectsWhitMarks',[SubjectController::class, 'subjectsWithMarks']);

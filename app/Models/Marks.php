@@ -14,7 +14,7 @@ class Marks extends Model
         'date',
         'mark'
         ];
-//    public function student(){
-//        return $this->belongsTo(Students::class,'student_id');
-//    }
+    public function student(){
+        return $this->belongsTo(Students::class, 'id');
+    }
 }
